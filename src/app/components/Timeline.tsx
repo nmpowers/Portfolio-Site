@@ -74,7 +74,7 @@ function TimelineItem({ title, organization, period, description, isLast, icon: 
 
           {/* Sub-timeline for sub-items */}
           {subItems && subItems.length > 0 && (
-              <div className="mt-6 ml-2 md:ml-4 border-l-2 bg-muted pl-6 space-y-8">
+              <div className="mt-6 ml-2 md:ml-4 border-l-2 pl-6 space-y-8">
                 {subItems.map((sub, index) => (
                     <div key={index} className="relative">
                       {/* Nested connector dot */}

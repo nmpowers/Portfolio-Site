@@ -1,5 +1,6 @@
 import { Briefcase, GraduationCap, Calendar, ChevronDown, ChevronUp, Download } from 'lucide-react';
 import { useState } from 'react';
+import resume from '../../assets/nathaniel-powers-software-engineering-resume.pdf';
 
 interface SubItemProps {
   title: string;
@@ -163,7 +164,7 @@ export function Timeline() {
         <div className="max-w-7xl mx-auto relative">
           <div className="absolute top-0 right-0 hidden md:block">
             <a
-                href="/resume.pdf"
+                href={ resume }
                 download
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all font-medium shadow-sm hover:shadow-md"
             >
@@ -174,7 +175,7 @@ export function Timeline() {
 
           <div className="md:hidden flex justify-center mb-8">
             <a
-                href="/resume.pdf"
+                href={ resume }
                 download
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all font-medium shadow-sm"
             >

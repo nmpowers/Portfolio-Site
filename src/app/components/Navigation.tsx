@@ -1,5 +1,6 @@
 import {Download, Menu, X } from "lucide-react";
 import { useState } from "react";
+import resume from '../../assets/nathaniel-powers-software-engineering-resume.pdf';
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +51,7 @@ export function Navigation() {
             </div>
 
             <a
-                href="/resume.pdf"
+                href={ resume }
                 download
                 className="hidden md:flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors font-medium text-sm"
             >
@@ -61,7 +62,7 @@ export function Navigation() {
             {/* Mobile menu button */}
             <div className="md:hidden flex items-center gap-4">
               <a
-                  href="/resume.pdf"
+                  href={resume}
                   download
                   className="flex items-center justify-center p-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
                   aria-label="Download Resume"

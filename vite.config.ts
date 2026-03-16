@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  base: '/Portfolio-Site/',
   plugins: [
     react(),
     tailwindcss(),
@@ -11,7 +12,7 @@ export default defineConfig({
   resolve: {
     alias: {
       // Alias @ to the src directory
-      '@': path.resolve('Portfolio-Site/src'),
+      '@': path.resolve(__dirname, './src'),
     },
   },
 

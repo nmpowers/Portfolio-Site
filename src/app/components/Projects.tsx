@@ -209,8 +209,8 @@ export function Projects() {
       technologies: ['Typescript', 'Figma', 'Tailwind CSS', 'React'],
       status: { type: 'Live' },
       imageUrl: portfolioSplash,
-      liveUrl: '#',
-      githubUrl: '#',
+      liveUrl: 'https://nmpowers.github.io/Portfolio-Site/',
+      githubUrl: 'https://github.com/nmpowers/Portfolio-Site',
     },
     {
       title: 'Ai Weiwei Studio Residence',

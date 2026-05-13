@@ -10,6 +10,7 @@ import studio1Splash from '../../assets/projects/Studio1-Splash-Img.png';
 import studio3Splash from '../../assets/projects/Studio3-Splash-Img.png';
 import studio4Splash from '../../assets/projects/Studio4-Splash-Img.png';
 import portfolioSplash from '../../assets/projects/portfolio-splash.png';
+import genAIPipelineSplash from '../../assets/projects/GenAI-Pipeline-Splash.png';
 interface ProjectStatus {
   type: 'Live' | 'Completed' | 'In Progress';
 }
@@ -43,7 +44,7 @@ function ProjectCard({ project, onClick }: { project: ProjectData, onClick: () =
           onClick={onClick}
       >
         {/* Project Image */}
-        <div className="h-58 bg-primary relative overflow-hidden flex-shrink-0">
+        <div className="h-58 bg-white relative overflow-hidden flex-shrink-0">
           {project.imageUrl ? (
               <img src={project.imageUrl} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
           ) : (
@@ -147,7 +148,7 @@ export function Projects() {
           '\n\nOur team has already deployed the tool into at least one classroom setting, and is currently working on improving the features of the app based on student experience and feedback for future iterations.',
       technologies: ['AI', 'AR/VR', 'Unity', 'Engineering', 'Docker'],
       status: { type: 'In Progress' },
-      imageUrl: genAISplash,
+      imageUrl: genAIPipelineSplash,
       githubUrl: 'https://github.com/nmpowers/sam-3d-api',
     },
     {
@@ -160,8 +161,8 @@ export function Projects() {
       technologies: ['WebGL', 'HTML', 'Javascript', 'Graphics'],
       status: { type: 'Live' },
       imageUrl: graphicViewerSplash,
-      liveUrl: 'https://nmpowers.github.io/3D-Splat-And-Mesh-Viewer/',
-      githubUrl: 'https://github.com/nmpowers/3D-Splat-And-Mesh-Viewer',
+      liveUrl: 'https://cs4300-portfolio.pages.dev/FINAL/index.html',
+      githubUrl: 'https://github.com/nmpowers/CS4300-Portfolio/tree/main/public/FINAL',
     },
     {
       title: 'Flight Detection App',
